@@ -28,9 +28,12 @@ const Home = observer(() => {
             <div key={place.place_id} className="  rounded-xl bg-white mb-3">
               <div className="grid grid-cols-6 p-5 gap-y-2">
                 {place.photos &&
-                  place.photos.map((photo) => {
+                  place.photos.map((photo, index: number) => {
                     return (
-                      <div className="col-span-2 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 2xl:col-span-1">
+                      <div
+                        className="col-span-2 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 2xl:col-span-1"
+                        key={index}
+                      >
                         <img
                           src={`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=250
            &photo_reference=${photo.photo_reference}&key=${process.env.NEXT_PUBLIC_KEY_PHOTO}`}
