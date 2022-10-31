@@ -16,7 +16,7 @@ const Navbar = observer(() => {
         <div className="xl:col-start-7 xl:col-span-3 2xl:col-start-7 2xl:col-span-3">
           <label
             htmlFor="search"
-            className="hidden sm:hidden md:hidden lg:hidden xl:block 2xl:block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300"
+            className="hidden sm:hidden md:hidden lg:hidden xl:block 2xl:block mb-2 text-lg font-medium text-gray-900 "
           >
             Search
           </label>
@@ -26,7 +26,7 @@ const Navbar = observer(() => {
               id="default-search"
               value={searchText}
               onChange={handleInputChanged}
-              className="block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-3xl sm:rounded-xl border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-3xl sm:rounded-xl border border-gray-300 focus:ring-blue-500 focus:border-blue-500  "
               placeholder="Search..."
               required
             />
